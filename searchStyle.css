@@ -1,0 +1,25 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+
+.search
+{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Images/laptop.jpeg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+}
+
+h1
+{
+    text-align:center;
+    color: #fff;
+    margin-bottom:70px;
+    font-size:45px;
+}
