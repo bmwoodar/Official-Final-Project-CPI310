@@ -4,7 +4,7 @@ body
     padding:0;
 }
 
-.register
+.memberLogin
 {
     height:150vh;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/email.jpeg);
@@ -72,7 +72,7 @@ button:hover
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn 
+.cancelbtn, .signinbtn 
 {
   float: left;
   width: 50%;

@@ -16,7 +16,7 @@
   <!-- Custom styles for this template -->
   <link href="css/blog-post.css" rel="stylesheet">
 
-  <!--CSS for Search Bar-->
+  <!--CSS for Registration-->
   <link href="registrationCSS.css" rel="stylesheet">
 
 </head>
@@ -49,6 +49,11 @@
       <h1>Sign Up</h1>
 			<h1><span>Please fill in this form to create an account.</span></h1>
 				<div class="form-box">
+            <label for="first"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="firstname" required>
+
+            <label for="last"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="lastname" required>
 
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
@@ -67,7 +72,7 @@
 				</div>
 	<div class="clearfix">
       <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit" class="signupbtn" formaction="memberIndex.html">Sign Up</button>
   </div>
     </form>
 </div>

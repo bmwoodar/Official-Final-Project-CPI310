@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="css/blog-post.css" rel="stylesheet">
 
+  <!--CSS for Registration-->
+  <link href="signinCSS.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,47 +43,41 @@
 		</div>
 	</nav>
 	<!-- Page Content -->
-	<div class="container">
-		<div class="row">
-			<!-- Post Content Column -->
-			<div class="col-lg-8">
-				<!-- Title -->
-				<h1 style="color: #FFC627; font-size: 52px">O</h1>
-				<!-- Author -->
-				<p style="color: #000000">
-				</p>
-				<hr>
-				<!-- Preview Image -->
-				
-				<hr>
-				<!-- Post Content -->
-				<h1 style="color: #8c1d40; font-size: 36px">Member Login</h1>
-				<p>
-					<form action = "login.php" method = "post"
-				</p>
-					<table>
-						<tr>
-							<td>Email</td>
-							<td><input type = "text" placeholder = "Email"></td>
-						</tr>
-						<tr>
-							<td>Password</td>
-							<td><input type = "text" placeholder = "Password"></td>
-						</tr>
-						
-					</table>
-				<p></p><p><a class="btn btn-lg btn-primary" href="memberIndex.html" role="button">Sign In</a></p>
-				<hr>
-		<!-- Footer -->
-		<footer class="py-5 bg-medium">
-			<div class="container">
-				<p class="m-0 text-center text-black">Copyright &copy; ASU Student Solutions 2019</p>
-			</div>
-			<!-- /.container -->
-		</footer>
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<div class="memberLogin">
+		<form>
+      <h1>Member Login</h1>
+			<h1><span>Please enter your login information for member access.</span></h1>
+				<div class="form-box">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+        
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+				</div>
+	<div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signinbtn" formaction="memberIndex.html">Sign In</button>
+  </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="py-5 bg-medium">
+    <div class="container">
+      <p class="m-0 text-center text-black">Copyright &copy; ASU Student Solutions 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+	

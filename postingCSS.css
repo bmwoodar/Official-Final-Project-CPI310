@@ -4,10 +4,10 @@ body
     padding:0;
 }
 
-.register
+.posting
 {
-    height:130vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/email.jpeg);
+    height:180vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/posting.jpg);
     background-size:cover;
     background-position:center;
     display:flex;
@@ -38,7 +38,7 @@ span
   display: inline-block;
   border: none;
   background: #f1f1f1;
-}
+} 
 
 input[type=text]:focus, input[type=password]:focus 
 {
@@ -72,7 +72,7 @@ button:hover
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn 
+.cancelbtn, .postbtn 
 {
   float: left;
   width: 50%;

@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="css/blog-post.css" rel="stylesheet">
 
+  <!--CSS for Posting-->
+  <link href="postingCSS.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,37 +42,47 @@
 			</div>
 		</div>
 	</nav>
-	<!-- Page Content -->
-	<div class="container">
-		<div class="row">
-			<!-- Post Content Column -->
-			<div class="col-lg-8">
-				<!-- Title -->
-				<h1 style="color: #FFC627; font-size: 52px">O</h1>
-				<!-- Author -->
-				<p style="color: #000000">
-				</p>
-				<hr>
-				<!-- Preview Image -->
-				
-				<hr>
-				<!-- Post Content -->
-				<h1 style="color: #8c1d40; font-size: 36px">Make a Post</h1>
-				<p>
-					Post Form Here
-				</p>
 
-				<hr>
-		<!-- Footer -->
-		<footer class="py-5 bg-medium">
-			<div class="container">
-				<p class="m-0 text-center text-black">Copyright &copy; ASU Student Solutions 2019</p>
-			</div>
-			<!-- /.container -->
-		</footer>
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Page Content -->
+<div class="posting">
+		<form>
+      <h1>Create a job posting!</h1>
+			<h1><span>Please fill in this form to create a job post.</span></h1>
+				<div class="form-box">
+            <label for="postTitle"><b>Job Posting Title</b></label>
+            <input type="text" placeholder="Seeking Web Developer" name="postTitle" required>
+
+            <label for="location"><b>Location</b></label>
+            <input type="text" placeholder="Tempe,AZ" name="location" required>
+
+			<label for="compensation"><b>Compensation</b></label>
+			<input type="text" placeholder="$500" name="compensation" required>
+			
+            <label for="description"><b>Describe the Job</b></label>
+            <input type="text" placeholder="I need a Web Developer..." name="description" required>
+        
+            <label for="keywords"><b>Keywords</b></label>
+            <input type="text" placeholder="HTML, CSS, JavaScript..." name="keywords" required>
+        
+            <p>By creating a posting you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+				</div>
+	<div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="postbtn">Post Job</button>
+  </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="py-5 bg-medium">
+    <div class="container">
+      <p class="m-0 text-center text-black">Copyright &copy; ASU Student Solutions 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
