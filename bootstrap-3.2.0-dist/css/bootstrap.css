@@ -5,12 +5,26 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: cabin;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 body {
+  font-family: crimsonroman;
   margin: 0;
 }
 article,
@@ -60,6 +74,7 @@ dfn {
   font-style: italic;
 }
 h1 {
+  font-family: cabin;
   margin: .67em 0;
   font-size: 2em;
 }
@@ -72,6 +87,7 @@ small {
 }
 sub,
 sup {
+  font-family: cabin;
   position: relative;
   font-size: 75%;
   line-height: 0;
@@ -114,10 +130,11 @@ optgroup,
 select,
 textarea {
   margin: 0;
-  font: inherit;
+  font: crimsonroman;
   color: inherit;
 }
 button {
+  font-family: cabin;
   overflow: visible;
 }
 button,
@@ -996,7 +1013,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: cabin;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -1220,6 +1237,7 @@ a.bg-danger:hover {
 }
 ul,
 ol {
+  font-family: crimsonroman;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -1281,6 +1299,7 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
+  font-family: crimsonroman;
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
@@ -2721,6 +2740,7 @@ select[multiple].input-lg {
   }
 }
 .btn {
+  font-family: cabin;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -3126,6 +3146,7 @@ tbody.collapse.in {
   outline: 0;
 }
 .dropdown-menu {
+  font-family: cabin;
   position: absolute;
   top: 100%;
   left: 0;
@@ -3500,6 +3521,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
+  font-family: cabin;
   padding: 6px 12px;
   font-size: 14px;
   font-weight: normal;
@@ -4439,6 +4461,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #fff;
 }
 .label {
+  font-family: cabin;
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -4506,6 +4529,7 @@ a.label:focus {
   background-color: #c9302c;
 }
 .badge {
+  font-family: cabin;
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -4555,6 +4579,7 @@ a.list-group-item.active > .badge,
   color: inherit;
 }
 .jumbotron p {
+  font-family: cabin;
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
@@ -5349,6 +5374,7 @@ a.list-group-item-danger.active:focus {
 }
 .close {
   float: right;
+  font-family: crimsonroman;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
@@ -5626,6 +5652,7 @@ button.close {
 .popover-title {
   padding: 8px 14px;
   margin: 0;
+  font-family: cabin;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -5824,7 +5851,7 @@ button.close {
   width: 20px;
   height: 20px;
   margin-top: -10px;
-  font-family: serif;
+  font-family: crimsonroman;
 }
 .carousel-control .icon-prev:before {
   content: '\2039';

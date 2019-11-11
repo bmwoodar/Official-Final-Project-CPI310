@@ -1,23 +1,38 @@
+@font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body
 {
+  font-family: crimsonroman;
     margin:0;
     padding:0;
 }
 
-.register
+.posting
 {
-    height:130vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/email.jpeg);
+    height:180vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/posting.jpg);
     background-size:cover;
     background-position:center;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-family:sans-serif;
+    font-family: cabin;
 }
 
 h1
 {
+  font-family: cabin;
     text-align:center;
     color: #fff;
     margin-bottom:30px;
@@ -38,7 +53,7 @@ span
   display: inline-block;
   border: none;
   background: #f1f1f1;
-}
+} 
 
 input[type=text]:focus, input[type=password]:focus 
 {
@@ -49,6 +64,7 @@ input[type=text]:focus, input[type=password]:focus
 /* Set a style for all buttons */
 button 
 {
+  font-family: cabin;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -72,7 +88,7 @@ button:hover
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn 
+.cancelbtn, .postbtn 
 {
   float: left;
   width: 50%;

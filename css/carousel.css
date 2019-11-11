@@ -1,8 +1,21 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+@font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
+  font-family: crimsonroman;
   padding-bottom: 40px;
   color: #5a5a5a;
 }
@@ -18,12 +31,13 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-  font-family: Cuprum, Arial, sans-serif;
+  font-family: cabin, Cuprum, Arial, sans-serif;
 
   font-size: 18pt;
 }
 
 ul.navbar-nav li a {
+   font-family: cabin;
    color: white;
    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
@@ -45,7 +59,7 @@ ul.navbar-nav li a:hover {
 }
 
 .navbar-brand {
-   font-family: Arial, Helvectica, sans-serif;
+   font-family: cabin, Arial, Helvectica, sans-serif;
    font-size: 30pt;
    color: #ffc627;
 }
@@ -81,7 +95,7 @@ ul.navbar-nav li a:hover {
 }
 
 .carousel-caption h1 {
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: cabin, Arial, Helvetica, sans-serif;
    font-size: 48px;
 
 }

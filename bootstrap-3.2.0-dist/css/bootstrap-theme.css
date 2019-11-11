@@ -3,6 +3,19 @@
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .btn-default,
 .btn-primary,

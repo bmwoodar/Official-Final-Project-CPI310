@@ -4,7 +4,22 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ @font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
+  font-family: cabin;
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
@@ -16,6 +31,7 @@ html {
 }
 
 .container {
+  font-family: cabin;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;

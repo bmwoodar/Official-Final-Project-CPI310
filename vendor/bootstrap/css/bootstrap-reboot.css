@@ -5,6 +5,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+ @font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 *,
 *::before,
 *::after {
@@ -12,7 +27,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: cabin;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -24,7 +39,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -211,6 +226,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
+  font-family: crimsonroman;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -308,7 +324,7 @@ progress {
 }
 
 ::-webkit-file-upload-button {
-  font: inherit;
+  font: cabin;
   -webkit-appearance: button;
 }
 

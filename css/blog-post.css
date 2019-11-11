@@ -1,0 +1,62 @@
+/*!
+ * Start Bootstrap - Blog Post (https://startbootstrap.com/template-overviews/blog-post)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
+ */
+ @font-face {
+  font-family: crimsonroman;
+  src:url("crimson-roman-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: cabin;
+  src:url("Cabin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: crimsonroman;
+  padding-top: 56px;
+}
+h1
+{
+  font-family: cabin, Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #ffc627
+}
+h2
+{
+  font-family: cabin, Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #8d1c40
+}
+h4
+{
+  font-family: cabin, Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #8d1c40
+}
+p
+{
+  font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
+  color: #000000
+}
+a
+{
+  font-family: crimosonroman, Georgia, 'Times New Roman', Times, serif;
+  color: #000000
+}
+li 
+{
+	font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
+	color: #000000
+}
+ul 
+{
+	font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
+	color: #000000
+}
+
+
