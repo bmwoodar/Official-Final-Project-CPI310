@@ -21,8 +21,8 @@ body
 .register
 {
     height:150vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/email.jpeg);
-    background-size:cover;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/email.jpeg");
+    background-size:auto;
     background-position:center;
     display:flex;
     justify-content:center;
@@ -34,14 +34,14 @@ h1
 {
   font-family: cabin;
     text-align:center;
-    color: #fff;
+    color: #ffc627;
     margin-bottom:30px;
     font-size:45px;
 }
 
 span
 {
-    color: #f44336;
+    color: #ffc627;
 }
 
 /* Full-width input fields */
