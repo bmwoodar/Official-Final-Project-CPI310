@@ -17,6 +17,13 @@ body
   margin:0;
   padding:0;
 }
+.copy
+{
+  color: #000000;
+  font-family: crimsonroman;
+  text-align: center;
+  vertical-align: bottom;
+}
 
 .register
 {
