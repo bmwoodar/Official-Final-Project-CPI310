@@ -13,10 +13,11 @@
 
 body
 {
-  font-family: crimsonroman;
+  font-family: cabin;
   margin:0;
   padding:0;
 }
+
 .copy
 {
   color: #000000;
@@ -40,11 +41,11 @@ body
 
 h1
 {
-  font-family: cabin;
     text-align:center;
     color: #ffc627;
     margin-bottom:30px;
     font-size:45px;
+    font-family: cabin, sans-serif;
 }
 
 span

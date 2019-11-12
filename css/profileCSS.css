@@ -13,11 +13,18 @@
 
 body
 {
-  font-family: crimsonroman;
+  font-family: cabin;
     margin:0;
     padding:0;
 }
 
+.copy
+{
+  color: #000000;
+  font-family: crimsonroman;
+  text-align: center;
+  vertical-align: bottom;
+}
 .profile
 {
     height:150vh;
@@ -36,6 +43,7 @@ h1
     color: #ffc627;
     margin-bottom:30px;
     font-size:45px;
+    font-family: cabin, sans-serif;
 }
 
 span
