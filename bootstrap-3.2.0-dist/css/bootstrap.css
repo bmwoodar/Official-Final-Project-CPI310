@@ -975,6 +975,9 @@ img {
 }
 .img-circle {
   border-radius: 50%;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 hr {
   margin-top: 20px;
@@ -1412,6 +1415,8 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
+  align-content: center;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
 }

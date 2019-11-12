@@ -16,6 +16,24 @@
   font-style: normal;
 }
 
+.copyright
+{
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 30vh;
+}
+
+.Bimage
+{
+  height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/handshake.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+
 body {
   font-family: crimsonroman;
   padding-top: 56px;
@@ -30,33 +48,33 @@ h2
 {
   font-family: cabin, Arial, Helvetica, sans-serif;
   font-style: bold;
-  color: #8d1c40
+  color: #ffc627
 }
 h4
 {
   font-family: cabin, Arial, Helvetica, sans-serif;
   font-style: bold;
-  color: #8d1c40
+  color: #ffc627
 }
 p
 {
   font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
-  color: #000000
+  color: #FFFFFF
 }
 a
 {
   font-family: crimosonroman, Georgia, 'Times New Roman', Times, serif;
-  color: #000000
+  color: #FFFFFF
 }
 li 
 {
 	font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
-	color: #000000
+	color: #FFFFFF
 }
 ul 
 {
 	font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
-	color: #000000
+	color: #FFFFFF
 }
 
 

@@ -10,6 +10,16 @@
   font-weight: normal;
   font-style: normal;
 }
+.Bimage
+{
+  height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/handshake.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
 
 body
 {
@@ -21,7 +31,7 @@ body
 .posting
 {
     height:180vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/posting.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/posting.jpg);
     background-size:cover;
     background-position:center;
     display:flex;

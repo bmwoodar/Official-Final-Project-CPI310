@@ -14,16 +14,17 @@
 body
 {
   font-family: crimsonroman;
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 }
 
 .register
 {
     height:150vh;
     background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/email.jpeg");
-    background-size:auto;
+    background-size:cover;
     background-position:center;
+    background-repeat: no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
