@@ -23,6 +23,13 @@
   padding-top: 30vh;
 }
 
+.searchCopyright
+{
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 50vh;
+}
+
 .Bimage
 {
   height: 100vh;
@@ -32,6 +39,32 @@
     background-repeat: no-repeat;
     display:flex;
     justify-content:center;
+}
+.searchImage
+{
+  height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/posting.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+
+.searchInfoImage
+{
+  height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/email.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+.form-box
+{
+    background: rgba(255,255,255,0.5);
+    padding: 30px 50px;
 }
 
 body {
