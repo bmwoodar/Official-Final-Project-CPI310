@@ -21,6 +21,14 @@
     justify-content:center;
 }
 
+.copy
+{
+  color: #000000;
+  font-family: crimsonroman;
+  text-align: center;
+  vertical-align: bottom;
+}
+
 body
 {
   font-family: crimsonroman;
