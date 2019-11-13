@@ -18,6 +18,14 @@ body
     padding:0;
 }
 
+.copy
+{
+  color: #000000;
+  font-family: crimsonroman;
+  text-align: center;
+  vertical-align: bottom;
+}
+
 .memberLogin
 {
     height:150vh;
