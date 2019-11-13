@@ -21,6 +21,7 @@
   text-align: center;
   vertical-align: bottom;
   padding-top: 30vh;
+  width:100%;
 }
 
 .searchCopyright
@@ -28,6 +29,7 @@
   text-align: center;
   vertical-align: bottom;
   padding-top: 50vh;
+  width:100%;
 }
 
 .Bimage
@@ -39,6 +41,7 @@
     background-repeat: no-repeat;
     display:flex;
     justify-content:center;
+    width:100%;
 }
 .searchImage
 {
@@ -49,6 +52,7 @@
     background-repeat: no-repeat;
     display:flex;
     justify-content:center;
+    width:100%;
 }
 
 .searchInfoImage
@@ -60,11 +64,28 @@
     background-repeat: no-repeat;
     display:flex;
     justify-content:center;
+    width:100%;
 }
-.form-box
+.aboutImage
+{
+  height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/tempe_01.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:100%;
+}
+.form-box2
 {
     background: rgba(255,255,255,0.5);
     padding: 30px 50px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    background-size: 100%
 }
 
 body {
@@ -75,7 +96,8 @@ h1
 {
   font-family: cabin, Arial, Helvetica, sans-serif;
   font-style: bold;
-  color: #ffc627
+  color: #ffc627;
+  text-align: center;
 }
 h2
 {
@@ -92,7 +114,8 @@ h4
 p
 {
   font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
-  color: #FFFFFF
+  color: #FFFFFF;
+  text-align: center;
 }
 a
 {
