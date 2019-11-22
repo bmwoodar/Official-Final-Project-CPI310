@@ -12,13 +12,13 @@ mongoose.connect(uri, { useNewUrlParser: true });
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/public', express.static("public"))
 
-app.use('/students', require('./routes/students'));
+app.use('/student', require('./routes/student-route'));
 
 app.get('/', (req, res) => {
-  res.render('profile')
+  res.send("hi there")
 })
 
 app.listen(port, function(){

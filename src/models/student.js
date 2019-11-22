@@ -6,8 +6,8 @@ const StudentSchema = new Schema({
     type:String,
     required:[true, 'Name field is required']
   },
-  year:String,
-  major:String,
+  // year:String,
+  // major:String,
   skills:String
 });
 
