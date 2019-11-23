@@ -16,7 +16,7 @@ app.set("view engine", "handlebars");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/public", express.static("public"));
 
-app.use("/student", require("./routes/student-route"));
+app.use(require("./routes/student-route"));
 
 app.get("/", (req, res) => {
   res.send("hi there");
