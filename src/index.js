@@ -19,6 +19,10 @@ app.use("/public", express.static("public"));
 app.use("/student", require("./routes/student-route"));
 
 app.get("/", (req, res) => {
+  res.send("hi there");
+});
+
+app.get("/about", (req, res) => {
   res.render("about");
 });
 
