@@ -68,7 +68,9 @@ router.get("/students", (req, res) => {
   });
 });
 
-router.post("/student/:id");
+router.post("/student/:id", (req, res) => {
+  res.send("TODO");
+});
 
 router.get("/student/:id", (req, res) => {
   Student.find({ _id: req.params.id })
@@ -81,15 +83,17 @@ router.get("/student/:id", (req, res) => {
 });
 
 router.get("/profile", (req, res) => {
-  // redirect to /student/:id
+  // show profile of currently logged in user, once you get authentication working
+  res.send("TODO");
 });
 
-router.put("/:id", (req, res) => {
-  res.send({ type: "PUT" });
-});
+// not sure what the intent was here - chuck
+// router.put("/:id", (req, res) => {
+//   res.send({ type: "PUT" });
+// });
 
-router.delete("/:id", (req, res) => {
-  res.send({ type: "DELETE" });
-});
+// router.delete("/:id", (req, res) => {
+//   res.send({ type: "DELETE" });
+// });
 
 module.exports = router;
