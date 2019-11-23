@@ -1,0 +1,17 @@
+{{!-- it looks like 'blog-post.css' makes all the colors white by default so I'm overriding them here --}}
+<style>
+  li {
+    color: unset;
+  }
+
+  a {
+    color: blue
+  }
+</style>
+<ul>
+  {{#each students}}
+  <li>
+    <a href="/student/{{this.id}}">{{this.name}} ({{this.email}})</a>
+  </li>
+  {{/each}}
+</ul>

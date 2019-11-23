@@ -2,9 +2,12 @@ const express = require("express");
 const router = express.Router();
 const Student = require("../models/student");
 const yup = require("yup");
+const bcrypt = require("bcrypt");
+
+const saltRounds = 10;
 
 router.get("/register", (req, res) => {
-  res.render("profile");
+  res.render("register");
 });
 
 const registrationValidationSchema = yup.object().shape({
@@ -19,19 +22,38 @@ const registrationValidationSchema = yup.object().shape({
     .required(),
   ["psw-repeat"]: yup
     .string()
+<<<<<<< HEAD
     //.equalTo(yup.ref("psw"))
+=======
+    .oneOf([yup.ref("psw")])
+>>>>>>> Students can register, add /students page and /student/:id page
     .required()
 });
 
-router.post("/register", (req, res) => {
+router.post("/register", async (req, res) => {
   console.log(req.body);
   try {
     registrationValidationSchema.validateSync(req.body);
   } catch (e) {
-    console.log(e);
-    return res.render("register", { errors: "something's wrong" });
+    return res.render("register", { errors: e.errors });
   }
-  Student.create(student)
+  // if (req.body.psw != req.body["psw-repeat"]) {
+  //   console.log(req.body.psw);
+  //   console.log(req.body["psw-repeat"]);
+  //   console.log("oof");
+  //   // return res.render("register", { errors: ["passwords must match"] });
+  // }
+  const existingUser = await Student.findOne({ email: req.body.email });
+  if (existingUser) {
+    return res.render("register", { errors: ["email already taken"] });
+  }
+  const pwHash = await bcrypt.hash(req.body.psw, saltRounds);
+  const newStudent = {
+    name: req.body.name,
+    password: pwHash,
+    email: req.body.email
+  };
+  Student.create(newStudent)
     .then(student => {
       res.send(student);
     })
@@ -40,10 +62,22 @@ router.post("/register", (req, res) => {
     });
 });
 
+router.get("/students", (req, res) => {
+  Student.find().then(students => {
+    res.render("debug-studentlist", { students });
+  });
+});
+
 router.post("/student/:id");
 
 router.get("/student/:id", (req, res) => {
-  res.send("asdf");
+  Student.find({ _id: req.params.id })
+    .then(student => {
+      res.send(student);
+    })
+    .catch(e => {
+      res.status(500).send(e);
+    });
 });
 
 router.get("/profile", (req, res) => {
