@@ -18,8 +18,48 @@ app.use("/public", express.static("public"));
 
 app.use(require("./routes/student-route"));
 
+app.get("/about", (req,res) => {
+  res.render("about")
+});
+
 app.get("/", (req, res) => {
-  res.send("hi there");
+  res.render("index");
+});
+
+app.get("/connectInfo", (req,res) => {
+  res.render("connectInfo")
+});
+
+app.get("/createInfo", (req,res) => {
+  res.render("createInfo")
+});
+
+app.get("/memberIndex", (req,res) => {
+  res.render("memberIndex")
+});
+
+app.get("/posting", (req,res) => {
+  res.render("posting")
+});
+
+app.get("/profile", (req,res) => {
+  res.render("profile")
+});
+
+app.get("/registration", (req,res) => {
+  res.render("registration")
+});
+
+app.get("/search", (req,res) => {
+  res.render("search")
+});
+
+app.get("/searchInfo", (req,res) => {
+  res.render("searchInfo")
+});
+
+app.get("/signin", (req,res) => {
+  res.render("signin")
 });
 
 app.listen(port, function() {
