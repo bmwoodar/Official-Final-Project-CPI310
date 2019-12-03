@@ -110,7 +110,7 @@ ul
 }
 footer
 {
-    padding-top: 3vh;
+    padding-top: 0px;
     background-color: white;
     position: absolute;
     bottom: 0;
@@ -248,7 +248,7 @@ opacity: 0.9;
 
 button:hover 
 {
-opacity:1;
+    opacity:1;
 }
 
 /* Extra styles for the cancel button */
@@ -339,7 +339,8 @@ ul.navbar-nav li a:hover
     
     .navbar-wrapper 
     {
-        margin-top: 20px;
+        margin-top: 0px;
+        padding-top: 10px;
     }
     .navbar-wrapper .container 
     {

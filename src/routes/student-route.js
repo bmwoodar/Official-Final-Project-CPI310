@@ -19,7 +19,7 @@ const registrationValidationSchema = yup.object().shape({
     .required(),
   ["psw-repeat"]: yup
     .string()
-    .equalTo(yup.ref("psw"))
+    //.equalTo(yup.ref("psw"))
     .required()
 });
 
