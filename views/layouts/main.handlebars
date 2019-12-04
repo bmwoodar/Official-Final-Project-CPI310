@@ -12,15 +12,52 @@
 
   <!-- Bootstrap core CSS -->
   <link href="/public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="/public/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="/public/bootstrap/css/bootstrap-theme-min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="/public/css/blog-post.css" rel="stylesheet">
+  <!-- My CSS -->
+  <link href="/public/css/carousel.css" rel="stylesheet">
+  <link href="/public/css/main.css" rel="stylesheet">
 
 </head>
 <body>
-  <!--{{if user>
-    <nav></nav>
-  </if> -->
+  <div class="navbar-container">
+    <div class="navbar-wrapper">
+
+      <div class="navbar navbar-static-top" role="navigation">
+        {{!-- <div class="container"> --}}
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              {{!-- <span class="sr-only">Toggle navigation</span> --}}
+            </button>
+            <a class="navbar-brand" href="/">ASU Student Solutions</a>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a style="color:#8c1d40" href="profile">Profile</a></li>
+              <li><a style="color:#8c1d40" href="about">About Us</a></li>
+              <li><a style="color:#8c1d40" href="signin">Sign In</a></li>
+              <li><a style="color:#8c1d40" href="registration">Registration</a></li>
+              <li><a style="color:#8c1d40" href="search">Search</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
   {{{body}}}
+  <div class="page-container">
+	<footer>
+		<div class="container">
+			<p class="m-0 text-center text-black" style="color:black">Copyright &copy; ASU Student Solutions 2019</p>
+     <p class="m-0 text-center text-black" style="color:black">by Braeden Woodard, Tyler Shauger, Anup Bista, Ryan Lapp, Matthew Stockmal, William Marsala</p>
+		<img class="img-circle" src="/public/images/logo2.png" alt="Logo2" style="width: 200px; height: 200px;">
+		</div>
+    </div>
+</footer>
 </body>
-</html>
