@@ -108,6 +108,10 @@ ul
     font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF
 }
+.infoList
+{
+    font-size: 18px;
+}
 footer
 {
     padding-top: 0px;
@@ -127,7 +131,7 @@ footer
 .page-container
 {
     position:relative;
-    min-height:100vh;
+    min-height:50vh;
     align-content: bottom;
 }
 
@@ -156,20 +160,20 @@ footer
 
 .posting
 {
-    height:180vh;
+    height:100%;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/posting.jpg");
     background-size:cover;
-    background-position:center;
+    background-position:top;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content:top;
+    align-items:top;
     font-family: cabin;
-    padding: 0;
+    padding: 0
 }
 
 .profile
 {
-    height:150vh;
+    height:100%;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../Images/email.jpeg");
     background-size:cover;
     background-position:center;
@@ -190,7 +194,7 @@ footer
 
 .register
 {
-    height:150vh;
+    height:100%;
     background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/email.jpeg");
     background-size:cover;
     background-position:center;
@@ -203,7 +207,7 @@ footer
 
 .memberLogin
 {
-    height:150vh;
+    height:100%;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/email.jpeg");
     background-size:cover;
     background-position:center;
@@ -308,6 +312,7 @@ ul.navbar-nav li a:hover
 {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 0;
 }
 .navbar-wrapper .navbar 
 {

@@ -62,6 +62,10 @@ app.get("/signin", (req,res) => {
   res.render("signin")
 });
 
+app.get("/info", (req,res) =>{
+  res.render("info")
+});
+
 app.listen(port, function() {
   console.log(`We are listening at port ${port}`);
 });
