@@ -22,11 +22,7 @@ const registrationValidationSchema = yup.object().shape({
     .required(),
   ["psw-repeat"]: yup
     .string()
-<<<<<<< HEAD
-    //.equalTo(yup.ref("psw"))
-=======
     .oneOf([yup.ref("psw")])
->>>>>>> Students can register, add /students page and /student/:id page
     .required()
 });
 

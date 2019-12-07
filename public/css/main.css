@@ -1,4 +1,4 @@
-@font-face 
+@font-face
 {
     font-family: crimsonroman;
     src:url("crimson-roman-webfont.ttf");
@@ -62,7 +62,7 @@
 
 /* *********************************************************************************** */
 
-body 
+body
 {
     font-family: crimsonroman;
     padding-top: 56px;
@@ -98,12 +98,12 @@ a
     font-family: crimosonroman, Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF
 }
-li 
+li
 {
     font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF
 }
-ul 
+ul
 {
     font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF
@@ -220,7 +220,7 @@ footer
 /* ************** POSTING PAGE CSS ******************************************************* */
 
 /* Full-width input fields */
-input[type=text], input[type=password] 
+input[type=text], input[type=password]
 {
 width: 100%;
 padding: 15px;
@@ -228,16 +228,16 @@ margin: 5px 0 22px 0;
 display: inline-block;
 border: none;
 background: #f1f1f1;
-} 
+}
 
-input[type=text]:focus, input[type=password]:focus 
+input[type=text]:focus, input[type=password]:focus
 {
 background-color: #ddd;
 outline: none;
 }
 
 /* Set a style for all buttons */
-button 
+button
 {
 font-family: cabin;
 background-color: #4CAF50;
@@ -250,13 +250,13 @@ width: 100%;
 opacity: 0.9;
 }
 
-button:hover 
+button:hover
 {
     opacity:1;
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn 
+.cancelbtn
 {
     padding: 14px 20px;
     background-color: #f44336;
@@ -264,7 +264,7 @@ button:hover
     width: 50%;
 }
 
-.signupbtn 
+.signupbtn
 {
     padding: 14px 20px;
     background-color: #33a532;
@@ -283,7 +283,7 @@ button:hover
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
-.navbar-wrapper 
+.navbar-wrapper
 {
     position: absolute;
     top: 0;
@@ -295,36 +295,36 @@ button:hover
     background-color: #526171;
 }
 
-ul.navbar-nav li a 
+ul.navbar-nav li a
 {
     font-family: cabin;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
-ul.navbar-nav li a:hover 
+ul.navbar-nav li a:hover
 {
     color: red;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
 
-.navbar-wrapper > .container 
+.navbar-wrapper > .container
 {
     padding-right: 0;
     padding-left: 0;
     padding-top: 0;
 }
-.navbar-wrapper .navbar 
+.navbar-wrapper .navbar
 {
     padding-right: 15px;
     padding-left: 15px;
 }
-.navbar-wrapper .navbar .container 
+.navbar-wrapper .navbar .container
 {
     width: auto;
 }
 
-.navbar-brand 
+.navbar-brand
 {
     font-family: cabin, Arial, Helvectica, sans-serif;
     font-size: 30pt;
@@ -337,30 +337,30 @@ ul.navbar-nav li a:hover
     background-color: #526171;
 }
 
-  @media (min-width: 768px) 
+  @media (min-width: 768px)
 {
 
     /* Navbar positioning foo */
-    
-    .navbar-wrapper 
+
+    .navbar-wrapper
     {
         margin-top: 0px;
         padding-top: 10px;
     }
-    .navbar-wrapper .container 
+    .navbar-wrapper .container
     {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .navbar-wrapper .navbar 
+    .navbar-wrapper .navbar
     {
         padding-right: 0;
         padding-left: 0;
     }
 
     /* The navbar becomes detached from the top, so we round the corners */
-    
-    .navbar-wrapper .navbar 
+
+    .navbar-wrapper .navbar
     {
         border-radius: 4px;
     }
@@ -370,16 +370,16 @@ ul.navbar-nav li a:hover
   /* ********************** MARKETING CONTENT ************************************************* */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 
+.marketing .col-lg-4
 {
     margin-bottom: 20px;
     text-align: center;
 }
-.marketing h2 
+.marketing h2
 {
     font-weight: normal;
 }
-.marketing .col-lg-4 p 
+.marketing .col-lg-4 p
 {
     margin-right: 10px;
     margin-left: 10px;
