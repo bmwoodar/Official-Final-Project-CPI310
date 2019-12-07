@@ -4,7 +4,7 @@
 <div class="card">
   <h1>{{this.name}}</h1>
   <p class="title">{{this.skills}}</p>
-  <a href="mailto: {{this.email}}">Email</a>
+  {{#if this.email}}<a href="mailto: {{this.email}}">{{this.email}}</a>{{/if}}
 </div>
 <!-- <li>
 <a href="/student/{{this.id}}">{{this.name}} ({{this.email}})</a>
