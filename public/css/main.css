@@ -69,6 +69,7 @@ body
 }
 h1
 {
+    max-width: 600px;
     font-size:45px;
     font-family: cabin, Arial, Helvetica, sans-serif;
     font-style: bold;
@@ -77,9 +78,11 @@ h1
 }
 h2
 {
+    max-width: 600px;
     font-family: cabin, Arial, Helvetica, sans-serif;
     font-style: bold;
-    color: #ffc627
+    color: #ffc627;
+    text-align: center;
 }
 h4
 {
@@ -117,8 +120,10 @@ footer
     padding-top: 0px;
     background-color: white;
     position: absolute;
+    text-align: center;
+    align-content: center;
     bottom: 0;
-    width:100%;
+    width: 100%;
 }
 
 /* *********************************************************************************** */
@@ -126,6 +131,20 @@ footer
 .page-setting
 {
     width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.about
+{
+    width: 600px;
+    align-content: center;
+    text-align: center;
+}
+
+.pad
+{
+    padding-top: 3vh;
 }
 
 .page-container
@@ -133,6 +152,8 @@ footer
     position:relative;
     min-height:50vh;
     align-content: bottom;
+    align-content: center;
+    text-align: center;
 }
 
 .copyright
@@ -145,6 +166,7 @@ footer
 
 .form-box
 {
+    max-width: 600px;
     background: rgba(255,255,255,0.5);
     padding: 30px 50px;
     display:flex;
@@ -190,6 +212,10 @@ footer
 .span-red
 {
     color: #f44336;
+}
+.span-maroon
+{
+    color: #8c1d40;
 }
 
 .register
@@ -267,7 +293,7 @@ button:hover
 .signupbtn 
 {
     padding: 14px 20px;
-    background-color: #33a532;
+    background-color: #78be20;
     float: left;
     width: 50%;
 }
@@ -292,14 +318,15 @@ button:hover
     z-index: 20;
     font-family: cabin, Cuprum, Arial, sans-serif;
     font-size: 18pt;
-    background-color: #526171;
+    background-color: #FFFFFF;
 }
 
 ul.navbar-nav li a 
 {
     font-family: cabin;
     color: white;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    align-content: bottom;
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8); */
 }
 ul.navbar-nav li a:hover 
 {
