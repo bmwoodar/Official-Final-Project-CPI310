@@ -1,0 +1,433 @@
+@font-face 
+{
+    font-family: crimsonroman;
+    src:url("crimson-roman-webfont.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: cabin;
+    src:url("Cabin-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Bimage
+{
+    min-height: 50vh;
+    height: 100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/handshake.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+.searchImage
+{
+    height: 100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/posting.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+
+.searchInfoImage
+{
+    height: 100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/email.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+.aboutImage
+{
+    height: 100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/tempe_01.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+}
+
+/* *********************************************************************************** */
+
+body 
+{
+    font-family: crimsonroman;
+    padding-top: 56px;
+}
+h1
+{
+    font-size:45px;
+    font-family: cabin, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color: #ffc627;
+    text-align: center;
+}
+h2
+{
+    font-family: cabin, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color: #ffc627
+}
+h4
+{
+    font-family: cabin, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color: #ffc627
+}
+p
+{
+    font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+a
+{
+    font-family: crimosonroman, Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF
+}
+li 
+{
+    font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF
+}
+ul 
+{
+    font-family: crimsonroman, Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF
+}
+.infoList
+{
+    font-size: 18px;
+}
+footer
+{
+    padding-top: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+
+/* *********************************************************************************** */
+
+.page-setting
+{
+    width: 100%;
+}
+
+.page-container
+{
+    position:relative;
+    min-height:50vh;
+    align-content: bottom;
+}
+
+.copyright
+{
+    text-align: center;
+    padding-top: 30vh;
+    width:100%;
+    height:100%;
+}
+
+.form-box
+{
+    background: rgba(255,255,255,0.5);
+    padding: 30px 50px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    background-size: 100%
+}
+
+.form-block
+{
+    display: block;
+}
+
+.posting
+{
+    height:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/posting.jpg");
+    background-size:cover;
+    background-position:top;
+    display:flex;
+    justify-content:top;
+    align-items:top;
+    font-family: cabin;
+    padding: 0
+}
+
+.profile
+{
+    height:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../Images/email.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: cabin, sans-serif;
+}
+
+.span-gold
+{
+  color: #ffc627;
+}
+.span-red
+{
+    color: #f44336;
+}
+
+.register
+{
+    height:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/email.jpeg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: cabin, sans-serif;
+}
+
+.memberLogin
+{
+    height:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/email.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+}
+
+/* ************** POSTING PAGE CSS ******************************************************* */
+
+/* Full-width input fields */
+input[type=text], input[type=password] 
+{
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+} 
+
+input[type=text]:focus, input[type=password]:focus 
+{
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for all buttons */
+button 
+{
+font-family: cabin;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+button:hover 
+{
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn 
+{
+    padding: 14px 20px;
+    background-color: #f44336;
+    float: left;
+    width: 50%;
+}
+
+.signupbtn 
+{
+    padding: 14px 20px;
+    background-color: #33a532;
+    float: left;
+    width: 50%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.postbtn
+{
+    float: left;
+    width: 50%;
+}
+
+/* ************** CUSTOMIZE THE NAVBAR **************************************************** */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    font-family: cabin, Cuprum, Arial, sans-serif;
+    font-size: 18pt;
+    background-color: #526171;
+}
+
+ul.navbar-nav li a 
+{
+    font-family: cabin;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+ul.navbar-nav li a:hover 
+{
+    color: red;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > .container 
+{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+}
+.navbar-wrapper .navbar 
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container 
+{
+    width: auto;
+}
+
+.navbar-brand 
+{
+    font-family: cabin, Arial, Helvectica, sans-serif;
+    font-size: 30pt;
+    color: #ffc627;
+}
+
+.navbar-container
+{
+    padding-bottom: 3vh;
+    background-color: #526171;
+}
+
+  @media (min-width: 768px) 
+{
+
+    /* Navbar positioning foo */
+    
+    .navbar-wrapper 
+    {
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+    .navbar-wrapper .container 
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar 
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    
+    .navbar-wrapper .navbar 
+    {
+        border-radius: 4px;
+    }
+}
+
+
+  /* ********************** MARKETING CONTENT ************************************************* */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 
+{
+    font-weight: normal;
+}
+.marketing .col-lg-4 p 
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* **************** SEARCH STYLING ****************************************************** */
+
+
+.search
+{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/laptop.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+}
+
+.search-field
+{
+    height: 50px;
+    padding: 10px;
+}
+
+.skills
+{
+    width: 400px;
+}
+
+.location
+{
+    width: 200px;
+}
+
+.search-btn
+{
+    height: 50px;
+    width: 150px;
+    background: #f44336;
+    border: none;
+    color: #fff;
+}
+
+.search-btn:hover
+{
+    background: #bb0d00;
+    cursor: pointer;
+}
