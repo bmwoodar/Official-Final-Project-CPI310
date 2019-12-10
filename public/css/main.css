@@ -130,9 +130,11 @@ footer
 
 .page-setting
 {
-    width: 100%;
     align-content: center;
     text-align: center;
+    max-width: 600px;
+    position: relative;
+    display:flex;
 }
 
 .about
@@ -186,7 +188,7 @@ footer
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/posting.jpg");
     background-size:cover;
     background-position:top;
-    display:flex;
+    /* display:flex; */
     justify-content:top;
     align-items:top;
     font-family: cabin;
