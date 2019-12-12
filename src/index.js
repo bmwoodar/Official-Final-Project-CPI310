@@ -108,7 +108,7 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
-app.post("/fuckMe", (req, res) => {
+app.post("/loveMe", (req, res) => {
   console.log(req.body);
   // try {
   //   registrationValidationSchema.validateSync(req.body);
