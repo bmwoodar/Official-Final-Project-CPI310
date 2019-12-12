@@ -13,6 +13,8 @@ const uuidv4 = require("uuid/v4");
 const app = express();
 const port = 3000;
 
+var ghettoCredentials = 'randomID';
+
 mongoose.connect(uri, { useNewUrlParser: true });
 
 app.engine("handlebars", exphbs());
@@ -48,7 +50,26 @@ app.get("/posting", (req,res) => {
 });
 
 app.get("/profile", (req,res) => {
-  res.render("profile")
+  console.log(ghettoCredentials);
+  if (ghettoCredentials != 'randomID') {
+    Student.find({ _id: ghettoCredentials._id })
+    .then(student => {
+    var theStudent = student[0];
+    var email = theStudent.name.replace(/\s/g, '') + '@aol.com';
+    var theStudentwEmail = {
+      name: theStudent.name,
+      email: email,
+      skills: theStudent.skills
+    }
+    res.render("studentProfile", theStudentwEmail)
+    })
+    .catch(e => {
+      res.status(500).send(e);
+    });
+  }
+  else {
+    res.render("profile")
+  }
 });
 
 app.get("/registration", (req,res) => {
@@ -65,6 +86,18 @@ app.get("/searchInfo", (req,res) => {
 
 app.get("/signin", (req,res) => {
   res.render("signin")
+});
+
+app.get("/signInAgain", (req,res) => {
+  Student.findOne({ email: req.query.email })
+  .then((student) => {
+    console.log(student);
+    ghettoCredentials = student._id;
+  })
+  .catch(e => {
+    res.status(500).send(e);
+  });
+  res.render("index")
 });
 
 app.get("/info", (req,res) =>{
@@ -96,6 +129,7 @@ app.post("/fuckMe", (req, res) => {
   Student.create(newStudent)
   .then(student => {
     console.log(student);
+    ghettoCredentials = student._id;
     res.render("studentProfile", student)
   })
   .catch(e => {
