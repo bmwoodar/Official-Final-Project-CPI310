@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
-const uri = process.env.MONGO_STRING;
+const uri = 'mongodb+srv://mestockm:fridaypacker@cpi-310-final-jfkjr.mongodb.net/test?retryWrites=true&w=majority';
 const mongoose = require("mongoose");
 const exphbs = require("express-handlebars");
 const Student = require("./models/student");
