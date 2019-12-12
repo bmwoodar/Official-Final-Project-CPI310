@@ -4,6 +4,11 @@ const bodyParser = require("body-parser");
 const uri = process.env.MONGO_STRING;
 const mongoose = require("mongoose");
 const exphbs = require("express-handlebars");
+const Student = require("./models/student");
+const AuthToken = require("./models/authToken")
+const yup = require("yup");
+const bcrypt = require("bcrypt");
+const uuidv4 = require("uuid/v4");
 
 const app = express();
 const port = 3000;
@@ -69,6 +74,49 @@ app.get("/info", (req,res) =>{
 app.get("/about", (req, res) => {
   res.render("about");
 });
+
+app.post("/fuckMe", (req, res) => {
+  console.log(req.body);
+  // try {
+  //   registrationValidationSchema.validateSync(req.body);
+  // } catch (e) {
+  //   return res.render("register", { errors: e.errors });
+  // }
+  // const existingUser = Student.findOne({ email: req.body.email });
+  // if (existingUser) {
+  //   return res.render("register", { errors: ["email already taken"] });
+  // }
+  // const pwHash = await bcrypt.hash(req.body.psw, saltRounds);
+  const newStudent = {
+    name: req.body.firstname + ' ' + req.body.lastname,
+    password: req.body.psw,
+    email: req.body.email,
+    skills: req.body.skills
+  };
+  Student.create(newStudent)
+  .then(student => {
+    console.log(student);
+    res.render("studentProfile", student)
+  })
+  .catch(e => {
+    res.send(e);
+  });
+});
+
+app.get("/findSomeStudents", (req, res) => {
+  console.log(req.query.search);
+  Student.find({ skills: req.query.search })
+  .then((students) => {
+    console.log(students);
+    res.render("debug-studentlist", { students });
+    // res.render("studentProfile", theStudentwEmail)
+  })
+  .catch(e => {
+    res.status(500).send(e);
+  });
+});
+
+
 
 app.listen(port, function() {
   console.log(`We are listening at port ${port}`);
