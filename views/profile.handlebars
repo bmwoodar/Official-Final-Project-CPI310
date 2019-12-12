@@ -1,38 +1,101 @@
-	<!-- Page Content -->
+<!-- Page Content -->
 <div class="profile">
-	<form action="/student" method="POST">
-  		<h1 class="span-gold">Create your profile.</h1>
-
-  		<div class="form-box">
-			  <div class="form-block">
-			<!-- <label for="fileupload"> Upload your Resume.</label>
-			<br><input type="file" name="fileupload" value="fileupload" id="fileupload">
-			<button type="button" class="submit">Upload</button> -->
-			<br>
-			<br>
-			<label for="first"><b>First Name</b></label>
-			<input type="text" placeholder="Enter First Name" name="firstname" required>
-
-			<label for="last"><b>Last Name</b></label>
-			<input type="text" placeholder="Enter Last Name" name="lastname" required>
-
-			<label for="email"><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
-
-			<label for="location"><b>Location</b></label>
-			<input type="text" placeholder="Tempe, AZ" name="location" required>
-
-			<label for="skills"><b>Skills</b></label>
-			<input type="text" placeholder="Java, HTML, JavaScript..." name="skills" required>
-
-		</div>
-		</div>
-		<div class="clearfix">
-			<button type="button" class="cancelbtn">Cancel</button>
-			<button type="submit" class="signupbtn">Update Profile</button>
-		</div>
-	</form>
+	<div class="container emp-profile">
+		<form method="post">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="profile-img">
+						<img src="https://i.ibb.co/D48SLRS/matt-Profile-Image.png" alt=""/>
+						<div class="file btn btn-lg btn-primary">
+							Change Photo
+							<input type="file" name="file"/>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="profile-head">
+						<h5>
+							Matt Stockmal
+						</h5>
+						<h6>
+							Professional Bafoon
+						</h6>
+						<p class="proile-rating">RANKINGS : <span>.5/10 (thx mom!)</span></p>
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="profile-work">
+						<p>WORK LINK</p>
+						<a href="">Clown Portfolio</a><br/>
+						<a href="">Email</a><br/>
+						<a href="">Picture of pasta I once made</a>
+						<p>SKILLS</p>
+						<a href="">Speaking words</a><br/>
+						<a href="">Breathing</a><br/>
+						<a href="">Standing on tippy toes</a><br/>
+						<a href="">Reaching for tall things</a><br/>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="tab-content profile-tab" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="row">
+								<div class="col-md-6">
+									<label>User Id</label>
+								</div>
+								<div class="col-md-6">
+									<p>MStockmal</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>Name</label>
+								</div>
+								<div class="col-md-6 top-name">
+									<p>Matt Stockmal</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>Email</label>
+								</div>
+								<div class="col-md-6">
+									<p>clownOnTheProwl@aol.net</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>Phone</label>
+								</div>
+								<div class="col-md-6">
+									<p>666 656 6666</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>Profession</label>
+								</div>
+								<div class="col-md-6">
+									<p>A God</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
-		<!-- Bootstrap core JavaScript -->
-		<script src="public/jquery/jquery.min.js"></script>
-		<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="public/jquery/jquery.min.js"></script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>

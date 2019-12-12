@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Student = require("../models/student");
-const AuthToken = require("..models/authToken")
+const AuthToken = require("../models/authToken")
 const yup = require("yup");
 const bcrypt = require("bcrypt");
 const uuidv4 = require("uuid/v4");
@@ -65,10 +65,10 @@ router.post("/login", (req, res) => {
   if (!currentStudent) {
     return res.render("main", { error: "user not found" });
   }
-  const matches = await bcrypt.compare(psw, currentStudent.password);
-  if (!matches) {
-    return res.render("main", { error: "password is incorrect" });
-  }
+  // const matches = await bcrypt.compare(psw, currentStudent.password);
+  // if (!matches) {
+  //   return res.render("main", { error: "password is incorrect" });
+  // }
   // create an accesstoken associated with them
   const token = uuidv4();
   AuthToken.create({authToken: token, userId: currentStudent._id});
@@ -97,10 +97,7 @@ router.get("/student/:id", (req, res) => {
   });
 });
 
-router.get("/profile", (req, res) => {
-  // show profile of currently logged in user, once you get authentication working
-  res.send("TODO");
-});
+
 
 // not sure what the intent was here - chuck
 // router.put("/:id", (req, res) => {
