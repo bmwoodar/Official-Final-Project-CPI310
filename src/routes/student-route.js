@@ -79,6 +79,7 @@ router.post("/login", (req, res) => {
 
 router.get("/students", (req, res) => {
   Student.find().then(students => {
+    console.log(students);
     res.render("debug-studentlist", { students });
   });
 });
@@ -90,7 +91,15 @@ router.post("/student/:id", (req, res) => {
 router.get("/student/:id", (req, res) => {
   Student.find({ _id: req.params.id })
   .then(student => {
-    res.send(student);
+  var theStudent = student[0];
+  var email = theStudent.name.replace(/\s/g, '') + '@aol.com';
+  var theStudentwEmail = {
+    name: theStudent.name,
+    email: email,
+    skills: theStudent.skills
+  }
+    res.render("studentProfile", theStudentwEmail)
+
   })
   .catch(e => {
     res.status(500).send(e);

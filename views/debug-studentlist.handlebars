@@ -2,7 +2,7 @@
   <div class="flex-grid">
     {{#each students}}
     <div class="card">
-    <h1>{{this.name}}</h1>
+      <a href="/student/{{this.id}}"><h1>{{this.name}}</h1></a>
     <p class="title">{{this.skills}}</p>
     <a href="mailto: {{this.email}}">Email</a>
     </div>
